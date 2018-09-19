@@ -182,6 +182,7 @@ body_replace_all_text <- function( x, old_value, new_value,
             is_scalar_character(new_value),
             is_scalar_logical(only_at_cursor))
   x$doc_obj$replace_all_text(old_value, new_value, only_at_cursor, warn = warn, ...)
+  x$footnotes$replace_all_text(old_value, new_value, only_at_cursor, warn = warn, ...)
   x
 }
 
